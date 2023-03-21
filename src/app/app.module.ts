@@ -11,11 +11,10 @@ import { AppComponent } from "./app.component";
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ErrorsModule,
     PhotosModule,
-    HomeModule,
     CoreModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
