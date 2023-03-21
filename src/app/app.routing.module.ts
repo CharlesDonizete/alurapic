@@ -7,9 +7,11 @@ import { AuthGuard } from "./core/auth/auth.guard";
 import { PhotoListComponent } from "./photos/photo-list/photo-list.component";
 import { PhotoFormComponent } from "./photos/photo-form/photo-form.component";
 import { PhotoListResolver } from "./photos/photo-list/photo-list.resolver";
+import { SignupComponent } from "./home/signup/signup.component";
 
 const routes: Routes = [
   { path: "", component: SigninComponent, canActivate: [AuthGuard] },
+  { path: "signup", component: SignupComponent },
   {
     path: "user/:userName",
     component: PhotoListComponent,
