@@ -1,4 +1,4 @@
-import { PhotoService } from "./../photo/photo.sevice";
+import { PhotoService } from "../photo/photo.service";
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 

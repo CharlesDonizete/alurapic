@@ -1,5 +1,5 @@
 import { Router } from "@angular/router";
-import { PhotoService } from "./../photo/photo.sevice";
+import { PhotoService } from "../photo/photo.service";
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { AlertService } from "src/app/shared/alert/alert.service";

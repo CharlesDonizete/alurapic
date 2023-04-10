@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 import { switchMap, tap } from "rxjs/operators";
 
 import { PhotoComment } from "src/app/photos/photo/photo.comment";
-import { PhotoService } from "src/app/photos/photo/photo.sevice";
+import { PhotoService } from "src/app/photos/photo/photo.service";
 @Component({
   selector: "ap-photo-comments",
   templateUrl: "./photo-comments.component.html",

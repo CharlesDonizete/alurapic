@@ -7,7 +7,7 @@ import {
 import { Observable } from "rxjs";
 import { Photo } from "../photo/photo";
 
-import { PhotoService } from "../photo/photo.sevice";
+import { PhotoService } from "../photo/photo.service";
 
 @Injectable({ providedIn: "root" })
 export class PhotoListResolver implements Resolve<Observable<Photo[]>> {
