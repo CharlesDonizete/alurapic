@@ -2,7 +2,9 @@ import { NewUser } from "./new-user";
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
-const API_URL = "http://localhost:3000";
+import { environment } from "src/environments/environment";
+
+const API_URL = environment.ApiUrl;
 
 @Injectable()
 export class SignupService {
