@@ -3,8 +3,9 @@ import { Photo } from "./photo";
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { catchError, map } from "rxjs/operators";
-import { of, throwError } from "rxjs";
+
 import { environment } from "src/environments/environment";
+import { of, throwError } from "rxjs";
 
 const API = environment.ApiUrl;
 
@@ -27,7 +28,10 @@ export class PhotoService {
     formData.append("allowComments", allowComments ? "true" : "false");
     formData.append("imageFile", file);
 
-    return this.http.post(`${API}/photos/upload`, formData);
+    return this.http.post(`${API}/photos/upload`, formData, {
+      observe: "events",
+      reportProgress: true,
+    });
   }
 
   findById(photoId: number) {
