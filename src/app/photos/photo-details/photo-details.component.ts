@@ -4,8 +4,8 @@ import { PhotoService } from "../photo/photo.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Component, OnInit } from "@angular/core";
 import { Photo } from "../photo/photo";
-import { AlertService } from "src/app/shared/alert/alert.service";
 import { UserService } from "src/app/core/user/user.service";
+import { AlertService } from "src/app/shared/components/alert/alert.service";
 
 @Component({
   templateUrl: "./photo-details.component.html",

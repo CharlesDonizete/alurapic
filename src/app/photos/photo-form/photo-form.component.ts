@@ -6,7 +6,7 @@ import { finalize } from "rxjs/operators";
 
 import { PhotoService } from "../photo/photo.service";
 import { UserService } from "src/app/core/user/user.service";
-import { AlertService } from "src/app/shared/alert/alert.service";
+import { AlertService } from "src/app/shared/components/alert/alert.service";
 
 @Component({
   selector: "ap-photo-form",

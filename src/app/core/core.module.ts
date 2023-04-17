@@ -5,11 +5,13 @@ import { HeaderComponent } from "./header/header/header.component";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { HTTP_INTERCEPTORS } from "@angular/common/http";
-import { AlertModule } from "../shared/alert/alert.module";
+import { AlertModule } from "../shared/components/alert/alert.module";
+import { LoadingModule } from "../shared/components/loading/loading.module";
+
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],
   exports: [HeaderComponent, FooterComponent],
-  imports: [CommonModule, AlertModule, RouterModule],
+  imports: [CommonModule, AlertModule, LoadingModule, RouterModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
